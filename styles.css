@@ -1,0 +1,210 @@
+/* Simple styles for the Little Plot Nursery page */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: #263b2b;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #397345;
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-height: 68px;
+  padding: 10px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e4ebe3;
+}
+
+.logo {
+  color: #2d663b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #405846;
+}
+
+.hero {
+  width: 88%;
+  max-width: 1050px;
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+}
+
+.small-title {
+  color: #5b805f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 12px 0;
+  color: #294f32;
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1.1;
+}
+
+h1 span {
+  color: #5d945d;
+}
+
+.hero-text > p:not(.small-title) {
+  max-width: 430px;
+  color: #627064;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #4d8352;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.plants,
+.about,
+.contact {
+  padding: 50px 6%;
+  text-align: center;
+}
+
+.plants {
+  background: #f4f8f3;
+}
+
+h2 {
+  margin: 0 0 8px;
+  color: #315b38;
+  font-size: 30px;
+}
+
+.section-intro,
+.about p,
+.contact p {
+  color: #647267;
+}
+
+.plant-list {
+  width: 100%;
+  max-width: 1050px;
+  margin: 25px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+.plant-card {
+  overflow: hidden;
+  border: 1px solid #e2e9e1;
+  border-radius: 6px;
+  background: white;
+}
+
+.plant-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.plant-details {
+  padding: 12px 14px 16px;
+}
+
+.plant-details h3 {
+  margin: 0 0 4px;
+  color: #315b38;
+}
+
+.plant-details p {
+  margin: 0 0 8px;
+  color: #647267;
+  font-size: 14px;
+}
+
+.plant-details strong {
+  color: #397345;
+}
+
+.about p {
+  max-width: 620px;
+  margin: 10px auto;
+}
+
+.contact {
+  background: #edf4ec;
+}
+
+.contact a {
+  font-weight: bold;
+}
+
+footer {
+  padding: 18px 6%;
+  color: #667368;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero-image {
+    height: 250px;
+  }
+
+  .plant-list {
+    max-width: 400px;
+    grid-template-columns: 1fr;
+  }
+}
